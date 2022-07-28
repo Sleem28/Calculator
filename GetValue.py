@@ -1,7 +1,4 @@
-from curses.ascii import isdigit
-
-
-def InputValues () -> str:
+def InputValues() -> str:
     check = False
     while not check:
         number = input()
