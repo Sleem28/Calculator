@@ -1,9 +1,10 @@
-def InputValues () -> int:
+from curses.ascii import isdigit
+
+
+def InputValues () -> str:
     check = False
     while not check:
-        try:
-            number = int(input(f'{text}'))
+        number = input()
+        if number.isdigit():
             check = True
-        except ValueError:
-            number = int(input(f'{text}'))
     return number
